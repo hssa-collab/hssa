@@ -1,0 +1,169 @@
+/* ===============================
+   1. RESET (cleans browser junk)
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   2. ROOT VARIABLES (colors + sizes)
+   =============================== */
+:root {
+  --primary: #ffff ;   
+  --secondary: #4CAF50;
+  --link: #d4b506ff;
+  --text-dark: #1f2933;
+  --bg-light: #f6faf7;
+  --card: #cde0ce;
+  --button: #9bd4ad;
+  --radius: 12px;
+}
+header {
+  background-color: var(--primary);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+    background-color: var(--primary)
+}
+/* ===============================
+   3. BODY (entire page defaults)
+   =============================== */
+body {
+  font-family: Times New Roman;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+/* ===============================
+   4. HEADER (top banner)
+   =============================== */
+header {
+  background-color: var(--primary);
+  color: #4CAF50;
+  padding: 1.5rem;
+  .logo {
+  width: 400px;       /* adjust size */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* moves logo to its own line */
+  margin: 0 auto 0.5rem auto; /* center and add spacing below */
+}
+
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;        /* space between links */
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: underline;
+  color: var(--link);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--link);              /* text turns white */
+  text-shadow: 0 0 5px #d4b506ff, 0 0 10px #d4b506ff, 0 0 15px #d4b506ff; /* white glow */
+  text-decoration: underline;
+}
+
+
+h2 {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.4rem;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+/* ===============================
+   5. MAIN CONTENT AREA
+   =============================== */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+/* ===============================
+   6. CARD (white boxes)
+   =============================== */
+.card {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+/* ===============================
+   7. BUTTONS
+   =============================== */
+.button {
+  display: inline-block;
+  background-color: var(--button);
+  color: black;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.button:hover {
+  background-color: var(--button);
+}
+/* ===============================
+   8. FOOTER
+   =============================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+/* ===============================
+   TEAM PAGE
+   =============================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.team-card h3 {
+  color: var(--secondary);
+  margin-bottom: 0.3rem;
+}
+
+.card a {
+  text-decoration: underline;
+  color: var(--secondary);       /* pastel green */
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.card a:hover {
+  color: #ffffff;              /* text turns white */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff; /* white glow */
+}
+
+
+
